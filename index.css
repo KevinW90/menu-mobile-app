@@ -1,0 +1,257 @@
+:root {
+  font-size: 12pt;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: black;
+}
+
+.app {
+  position: relative;
+  z-index: -1;
+  /* iPhone X display */
+  width: 411px;
+  height: 812px;
+
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(to top, #191a1e, #4a505a);
+  border-radius: 50px;
+  /* border-top: 50px solid silver;
+  border-left: 25px solid silver;
+  border-right: 25px solid silver;
+  border-bottom: 50px solid silver; */
+
+  /* border-radius: 50px; */
+
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: -75px;
+  z-index: -2;
+  width: 150%;
+  height: 76%;
+
+  display: flex;
+  justify-content: center;
+
+  color: white;
+
+  background: linear-gradient(to bottom, #34393f, #212429);
+  box-shadow: inset 0 -3px 15px rgba(0,0,0,.3);
+  border-radius: 50%;
+}
+
+.focus {
+  position: absolute;
+  top: calc(18.75% - 35px);
+  z-index: 5;
+  width: 75%;
+  height: 38%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #1e1f21;
+  border-radius: 50%;
+
+  /* box-shadow: 20px 20px 50px rgba(128,128,128,.4); */
+}
+
+.focus-before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: calc(18.75% - 55px);
+  width: calc(75% + 40px);
+  height: calc(38% + 40px);
+
+  box-shadow: inset 10px 10px 20px rgba(34,34,34,.3),
+              -5px -5px 5px rgba(34,34,34,.3),
+              inset -10px -10px 20px rgba(112,112,112,.3),
+              5px 5px 5px rgba(112,112,112,.3);
+  border-radius: 50%;
+}
+
+.focus img {
+  /* z-index: 5; */
+  width: 110%;
+  height: 100%;
+}
+
+.header {
+  z-index: 2;
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #888;
+  font-size: 1.5rem;
+
+  margin: 20px;
+  /* border: 4px solid green; */
+}
+
+/* angle left icon */
+.fa-angle-left {
+  font-size: 2rem;
+}
+
+/* BUTTON STYLES */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-round {
+  border-radius: 50%;
+}
+
+.btn-sm {
+  width: 37.5px;
+  height: 37.5px;
+  align-self: flex-end;
+
+
+
+  border: 1px solid rgba(0,0,0,.5);
+}
+
+.btn-sm:not(:last-child) {
+  margin-right: 75px;
+}
+
+.btn-sm:nth-child(2) {
+  margin-bottom: -20px;
+}
+
+.btn-md {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-black {
+  position: relative;
+  background: #24282b;
+}
+
+.btn-black::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255,255,255,.1), rgba(0,0,0,.5));
+  border-radius: 50%;
+  box-shadow: -2px -2px 15px rgba(255,255,255,.2),
+               2px  2px 15px rgba(0,0,0,.8);
+}
+
+.btn-orange {
+  position: relative;
+  background: linear-gradient(to bottom right, #e63112, #f59006);
+}
+
+.btn-orange::before {
+  position: absolute;
+  content: '';
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+
+  border: 1px solid rgba(34,34,34,.1);
+  border-radius: 50%;
+  box-shadow: -3px -3px 10px rgba(255,255,255,.3),
+               3px  3px 10px black;
+}
+
+.btn-orange::after {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: -1;
+  content: '';
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  background: linear-gradient(to bottom right, #e17e09, #d24411);
+
+  border-radius: 50%;
+}
+/* ********************** */
+
+.order {
+  position: absolute;
+  top: 76%;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  color: white;
+}
+
+.order > div:not(:last-child) {
+  margin-right: 40px;
+}
+
+.cart-section {
+  position: absolute;
+  top: calc(76% + 90px);
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+
+  color: white;
+}
+
+.cart-section > div {
+  width: 50%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3rem;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3rem;
+
+  background: linear-gradient(to right, #e63112, #e49b06);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+
+  padding: 15px 0;
+}
+
+.cart i {
+  margin-right: 10px;
+}
