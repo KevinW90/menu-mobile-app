@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: green;
+  background: black;
 }
 
 .app {
@@ -34,7 +34,7 @@ body {
   border-right: 25px solid silver;
   border-bottom: 50px solid silver; */
 
-  /* border-radius: 50px; */
+  border-radius: 50px;
 
   overflow: hidden;
 }
