@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import Button from "./lib/Button.svelte";
 
   let mainEl: HTMLElement;
   let centerEl: HTMLElement;
@@ -21,6 +22,7 @@
 <main>
   <div class="center">
 
+    <Button role="black" />
   </div>
 </main>
 
