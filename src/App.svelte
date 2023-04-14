@@ -12,7 +12,7 @@
     
     // 2rem margin from edge of screen
     const margin = 2;
-    // 
+    // sets the sunken area's width to allow 2rem margin from edge of screen
     centerEl.style.width = `${mainWidth - (2 * (margin * 16))}px`;
     centerEl.style.height = `${mainWidth - (2 * (margin * 16))}px`;
 });
@@ -44,6 +44,7 @@
     margin: 0 auto;
     background: linear-gradient(135deg, rgba($dark, .6), rgba(#aaa, .1));
     box-shadow: -5px -5px 5px 0 rgba(black, .1), 5px 5px 5px rgba(#505050,.3);
+    // just so happened to be a good eye-measured value
     transform: translateY(50%);
 
     // dark circle as the focus element
