@@ -22,7 +22,7 @@
 <main>
   <div class="center">
 
-    <Button role="black" />
+    <Button color="black" size="large" text="G"/>
   </div>
 </main>
 
